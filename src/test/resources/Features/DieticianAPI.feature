@@ -18,10 +18,20 @@ Feature: DieticianAPI Feature
     When User sends HTTPS POST Request with login endpoint and with missing mandatory fields in request body
     Then User receives 401 Status with response body
 
-  
-
   @GETAllPatient
   Scenario: Get all Patient details
     Given User creates  Request
     When User sends HTTPS Request to Get all Patients with authentication token
+    Then User receives 200 Status with response body
+
+  @POSTCreateNewPatientWithValidBody
+  Scenario: User creates new patient with valid body
+    Given User creates  Request
+    When User sends HTTPS Request and with valid request body in Form Data and authentication token
+    Then User receives 201 Status with response body
+    
+    @DELETEPatientWithValidID
+  Scenario: Delete a patient with valid PatientId
+    Given User creates  Request
+    When User sends HTTPS Request and with valid PatientId and authentication token
     Then User receives 200 Status with response body

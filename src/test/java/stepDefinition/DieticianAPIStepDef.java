@@ -42,4 +42,14 @@ public class DieticianAPIStepDef extends BaseUtils{
 	public void user_sends_https_request_to_get_all_patients_with_authentication_token() {
 		DieticianRequest.getAllPatient();
 	}
+	@When("User sends HTTPS Request and with valid request body in Form Data and authentication token")
+	public void user_sends_https_request_and_with_valid_request_body_in_form_data_and_authentication_token() throws IOException {
+		newpatientpayload =DieticianRequestBody.createNewPatient();
+		DieticianRequest.createNewPatient(newpatientpayload);
+	}
+	@When("User sends HTTPS Request and with valid PatientId and authentication token")
+	public void user_sends_https_request_and_with_valid_patient_id_and_authentication_token() {
+		DieticianRequest.DeletePatient();
+
+	}
 }
