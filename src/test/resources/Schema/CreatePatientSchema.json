@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "patientId": {
+      "type": "integer"
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "ContactNumber": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Allergy": {
+      "type": "string"
+    },
+    "FoodCategory": {
+      "type": "string"
+    },
+    "DateOfBirth": {
+      "type": "string"
+    },
+    "DieticianId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "patientId",
+    "FirstName",
+    "LastName",
+    "ContactNumber",
+    "Email",
+    "Allergy",
+    "FoodCategory",
+    "DateOfBirth",
+    "DieticianId"
+  ]
+}

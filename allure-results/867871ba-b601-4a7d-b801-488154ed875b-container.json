@@ -1,0 +1,1 @@
+{"uuid":"867871ba-b601-4a7d-b801-488154ed875b","name":"Scenario: Get all Patient details","children":["9f6a8940-ebf1-4f46-ae3e-a0be9b11b265"],"befores":[{"name":"stepDefinition.Hooks.beforeScenario()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1700425172951,"stop":1700425172951}],"afters":[],"start":1700425172949,"stop":1700425173283}

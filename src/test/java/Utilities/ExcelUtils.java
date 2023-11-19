@@ -19,33 +19,29 @@ public class ExcelUtils {
 	public XSSFSheet sheet;
 	public XSSFRow row;
 	public XSSFCell cell;
-	
-	
-public ExcelUtils(String path)
-{
-	this.path =path;
-}
 
-public String getCellData(String sheetName,int rownum,int colnum) throws IOException
-{
-	fi=new FileInputStream(path);
-	workbook=new XSSFWorkbook(fi);
-	sheet=workbook.getSheet(sheetName);
-	row=sheet.getRow(rownum);
-	cell=row.getCell(colnum);
+	public ExcelUtils(String path) {
+		this.path = path;
+	}
 
-	DataFormatter formatter = new DataFormatter();
-	String value;
-	try{
-		value = formatter.formatCellValue(cell); 
-		//Returns the formatted value of a cell as a String regardless of the cell type.
+	public String getCellData(String sheetName, int rownum, int colnum) throws IOException {
+		fi = new FileInputStream(path);
+		workbook = new XSSFWorkbook(fi);
+		sheet = workbook.getSheet(sheetName);
+		row = sheet.getRow(rownum);
+		cell = row.getCell(colnum);
+
+		DataFormatter formatter = new DataFormatter();
+		String value;
+		try {
+			value = formatter.formatCellValue(cell);
+			// Returns the formatted value of a cell as a String regardless of the cell
+			// type.
+		} catch (Exception e) {
+			value = "";
+		}
+		workbook.close();
+		fi.close();
+		return value;
 	}
-	catch(Exception e)
-	{
-		value="";
-	}
-	workbook.close();
-	fi.close();
-	return value;
-}
 }

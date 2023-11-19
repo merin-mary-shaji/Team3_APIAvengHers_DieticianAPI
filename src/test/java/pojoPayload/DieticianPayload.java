@@ -7,8 +7,15 @@ public class DieticianPayload {
 	private String password;
 	private String userLoginEmail;
 	private Integer patientId;
+	private String fileId;
 	
 	
+	public String getFileId() {
+		return fileId;
+	}
+	public void setFileId(String fileId) {
+		this.fileId = fileId;
+	}
 	public Integer getPatientId() {
 		return patientId;
 	}
