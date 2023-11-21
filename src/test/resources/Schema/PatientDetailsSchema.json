@@ -26,40 +26,6 @@
         "FoodCategory": {
           "type": "string"
         },
-        "FileMorbidity": {
-          "type": "object",
-          "properties": {
-            "65597a7c9be83b1f97ce1362": {
-              "type": "object",
-              "properties": {
-                "T4": {
-                  "type": "string"
-                },
-                "TSH": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "T4",
-                "TSH"
-              ]
-            }
-          },
-          "required": [
-            "65597a7c9be83b1f97ce1362"
-          ]
-        },
-        "FileMorbidityCondition": {
-          "type": "object",
-          "properties": {
-            "65597a7c9be83b1f97ce1362": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "65597a7c9be83b1f97ce1362"
-          ]
-        },
         "DateOfBirth": {
           "type": "string"
         },
@@ -75,8 +41,6 @@
         "Email",
         "Allergy",
         "FoodCategory",
-        "FileMorbidity",
-        "FileMorbidityCondition",
         "DateOfBirth",
         "DieticianId"
       ]

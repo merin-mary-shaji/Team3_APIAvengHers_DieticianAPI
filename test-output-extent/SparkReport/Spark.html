@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Build 1</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 19, 2023 15:13:19</span></a>
+<a href="#"><span class="badge badge-primary">Nov 20, 2023 21:47:47</span></a>
 </li>
 </ul>
 </div>
@@ -61,19 +61,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 19, 2023 15:13:19</h3>
+<h3>Nov 20, 2023 21:47:47</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 19, 2023 15:13:45</h3>
+<h3>Nov 20, 2023 21:48:32</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -96,7 +96,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>2</b> features passed
+<b>3</b> features passed
 </small>
 </div>
 <div>
@@ -118,7 +118,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>19</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>22</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -138,7 +138,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>57</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>66</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -157,7 +157,7 @@
 </div></div>
 <script>
 var timeline = {
-"DieticianAPI Feature":20.512,"Patient Feature":2.735
+"DieticianAPI Feature":34.794,"Motbidity module DieticianAPI Feature":1.528,"Patient Feature":4.282
 };
 </script>
 <div class="row">
@@ -167,6 +167,22 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@POSTUserLogin</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@POSTUserLoginWithMissingMandatoryField</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@POSTCreateNewPatientWithValidBody</td>
 <td>1</td>
 <td>0</td>
@@ -175,8 +191,48 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@POSTUserLogin</td>
-<td>2</td>
+<td>@GETAllPatient</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GETPatientFileByFileIDloginAsPatient</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DELETEPatientWithValidID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GETPatientFileByInValidFileID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@PUTUpdatePatientWithInValidPatientId</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DELETEPatientWithInValidID</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -199,31 +255,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@PUTUpdatePatientWithPatientIdAndMissingField</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@GETPatientMorbidityDetailsValidId</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@GETPatientMorbidityloginAsPatientDetails</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@DELETEPatientWithValidID</td>
+<td>@GETPatientMorbidityDetailsInValidId</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -239,39 +271,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@GETPatientFileByInValidFileID</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@GETPatientMorbidityDetailsInValidId</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@DELETEPatientWithInValidID</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@DieticianLogOut</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@POSTUserLoginWithMissingMandatoryField</td>
+<td>@PUTUpdatePatientWithPatientIdAndMissingField</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -287,7 +287,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@GETAllPatient</td>
+<td>@MorbidityDetailsNegativeScenario</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -295,7 +295,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@PUTUpdatePatientWithInValidPatientId</td>
+<td>@GETPatientMorbidityDetailsValidId</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -303,7 +303,31 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@GETPatientFileByFileIDloginAsPatient</td>
+<td>@MorbidityDetailsPositiveScenario</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GETPatientMorbidityloginAsPatientDetails</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@MorbidityConditionByTestName</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DieticianLogOut</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -319,18 +343,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 3,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 19,
+passChild: 22,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 57,
+passGrandChild: 66,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -355,7 +379,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@POSTCreateNewPatientWithValidBody</a><a class="dropdown-item" href="#">@POSTUserLogin</a><a class="dropdown-item" href="#">@POSTUserLoginInValidUser</a><a class="dropdown-item" href="#">@GETPatientFileByFileID</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithPatientIdAndMissingField</a><a class="dropdown-item" href="#">@GETPatientMorbidityDetailsValidId</a><a class="dropdown-item" href="#">@GETPatientMorbidityloginAsPatientDetails</a><a class="dropdown-item" href="#">@DELETEPatientWithValidID</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithValidPatientIdAndBody</a><a class="dropdown-item" href="#">@GETPatientFileByInValidFileID</a><a class="dropdown-item" href="#">@GETPatientMorbidityDetailsInValidId</a><a class="dropdown-item" href="#">@DELETEPatientWithInValidID</a><a class="dropdown-item" href="#">@DieticianLogOut</a><a class="dropdown-item" href="#">@POSTUserLoginWithMissingMandatoryField</a><a class="dropdown-item" href="#">@POSTCreateNewPatientWithmandatoryFieldNotIncluded</a><a class="dropdown-item" href="#">@GETAllPatient</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithInValidPatientId</a><a class="dropdown-item" href="#">@GETPatientFileByFileIDloginAsPatient</a>
+<a class="dropdown-item" href="#">@POSTUserLogin</a><a class="dropdown-item" href="#">@POSTUserLoginWithMissingMandatoryField</a><a class="dropdown-item" href="#">@POSTCreateNewPatientWithValidBody</a><a class="dropdown-item" href="#">@GETAllPatient</a><a class="dropdown-item" href="#">@GETPatientFileByFileIDloginAsPatient</a><a class="dropdown-item" href="#">@DELETEPatientWithValidID</a><a class="dropdown-item" href="#">@GETPatientFileByInValidFileID</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithInValidPatientId</a><a class="dropdown-item" href="#">@DELETEPatientWithInValidID</a><a class="dropdown-item" href="#">@POSTUserLoginInValidUser</a><a class="dropdown-item" href="#">@GETPatientFileByFileID</a><a class="dropdown-item" href="#">@GETPatientMorbidityDetailsInValidId</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithValidPatientIdAndBody</a><a class="dropdown-item" href="#">@PUTUpdatePatientWithPatientIdAndMissingField</a><a class="dropdown-item" href="#">@POSTCreateNewPatientWithmandatoryFieldNotIncluded</a><a class="dropdown-item" href="#">@MorbidityDetailsNegativeScenario</a><a class="dropdown-item" href="#">@GETPatientMorbidityDetailsValidId</a><a class="dropdown-item" href="#">@MorbidityDetailsPositiveScenario</a><a class="dropdown-item" href="#">@GETPatientMorbidityloginAsPatientDetails</a><a class="dropdown-item" href="#">@MorbidityConditionByTestName</a><a class="dropdown-item" href="#">@DieticianLogOut</a>
 </ul>
 </li>
 </ul>
@@ -368,7 +392,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">DieticianAPI Feature</p>
             <p class="text-sm">
-              <span>3:13:21 PM</span> / <span>00:00:20:512</span>
+              <span>9:47:51 PM</span> / <span>00:00:34:794</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -377,9 +401,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">DieticianAPI Feature</h5>
-<span class='badge badge-success'>11.19.2023 3:13:21 PM</span>
-<span class='badge badge-danger'>11.19.2023 3:13:42 PM</span>
-<span class='badge badge-default'>00:00:20:512</span>
+<span class='badge badge-success'>11.20.2023 9:47:51 PM</span>
+<span class='badge badge-danger'>11.20.2023 9:48:26 PM</span>
+<span class='badge badge-default'>00:00:34:794</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -433,8 +457,8 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_Code(java.lang.Integer)">
-                <span>Then User receives 401 Status Code</span>
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_code_and_error(java.lang.Integer,java.lang.String)">
+                <span>Then User receives 401 Status Code and error "Unauthorized"</span>
       <div>
       </div>
               </div>
@@ -459,8 +483,8 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_Code(java.lang.Integer)">
-                <span>Then User receives 401 Status Code</span>
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_code_and_error(java.lang.Integer,java.lang.String)">
+                <span>Then User receives 401 Status Code and error "Unauthorized"</span>
       <div>
       </div>
               </div>
@@ -735,9 +759,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Patient Feature</p>
+            <p class="name">Motbidity module DieticianAPI Feature</p>
             <p class="text-sm">
-              <span>3:13:42 PM</span> / <span>00:00:02:735</span>
+              <span>9:48:26 PM</span> / <span>00:00:01:528</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -745,10 +769,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Patient Feature</h5>
-<span class='badge badge-success'>11.19.2023 3:13:42 PM</span>
-<span class='badge badge-danger'>11.19.2023 3:13:45 PM</span>
-<span class='badge badge-default'>00:00:02:735</span>
+<h5 class="test-status text-pass">Motbidity module DieticianAPI Feature</h5>
+<span class='badge badge-success'>11.20.2023 9:48:26 PM</span>
+<span class='badge badge-danger'>11.20.2023 9:48:27 PM</span>
+<span class='badge badge-default'>00:00:01:528</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -761,7 +785,116 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>User login as Patient with valid credentials</div>
+        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Verify User is successfull in retriving the mobidity details using  Get request with valid endpoints</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_creates_request()">
+                <span>Given User creates  Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.MorbidityModuleDieticianAPI.user_sends_https_request_to_get_all_morbidity_details_with_authentication_token()">
+                <span>When User sends HTTPS Request to get all morbidity details with authentication token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_Code(java.lang.Integer)">
+                <span>Then User receives 200 Status Code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Verify User is retriving the mobidity details using  Get request with invalid endpoints</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_creates_request()">
+                <span>Given User creates  Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.MorbidityModuleDieticianAPI.user_sends_https_request_to_get_all_morbidity_details_with_invalid_endpoints_authentication_token()">
+                <span>When User sends HTTPS Request to get all morbidity details with invalid endpoints authentication token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_code_and_error(java.lang.Integer,java.lang.String)">
+                <span>Then User receives 404 Status Code and error "Not Found"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Verify User is successfull in retriving the mobidity details with Get request passing test name and endpoints</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_creates_request()">
+                <span>Given User creates  Request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.MorbidityModuleDieticianAPI.user_sends_https_get_request_to_get_all_morbidity_deatials_with_passing_test_name_and_authentication_token()">
+                <span>When User sends HTTPS  GET Request to get all morbidity deatials with passing test name and authentication token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_Code(java.lang.Integer)">
+                <span>Then User receives 200 Status Code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="83"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Patient Feature</p>
+            <p class="text-sm">
+              <span>9:48:27 PM</span> / <span>00:00:04:282</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Patient Feature</h5>
+<span class='badge badge-success'>11.20.2023 9:48:27 PM</span>
+<span class='badge badge-danger'>11.20.2023 9:48:32 PM</span>
+<span class='badge badge-default'>00:00:04:282</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=83</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>User login as Patient with valid credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -787,7 +920,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Get Patients Morbidity datails login as patient with PatientID</div>
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Get Patients Morbidity datails login as patient with PatientID</div>
       </div>
     </div>
         <div class="collapse">
@@ -813,7 +946,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Get Patients File By FileID login as patient</div>
+        <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>Get Patients File By FileID login as patient</div>
       </div>
     </div>
         <div class="collapse">
@@ -839,7 +972,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Delete a patient with valid PatientId</div>
+        <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Delete a patient with valid PatientId</div>
       </div>
     </div>
         <div class="collapse">
@@ -854,8 +987,8 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinition.DieticianAPIStepDef.user_receives_status_Code(java.lang.Integer)">
-                <span>Then User receives 200 Status Code</span>
+              <div class="step pass-bg" title="stepDefinition.PatientStepDef.user_receives_status_code_and_error_message(java.lang.Integer)">
+                <span>Then User receives 200 Status Code and comfirmation message for successfull deletion</span>
       <div>
       </div>
               </div>
@@ -865,7 +998,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Delete a patient with Invalid PatientId</div>
+        <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>Delete a patient with Invalid PatientId</div>
       </div>
     </div>
         <div class="collapse">
@@ -891,7 +1024,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Dietician LogOut</div>
+        <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>Dietician LogOut</div>
       </div>
     </div>
         <div class="collapse">

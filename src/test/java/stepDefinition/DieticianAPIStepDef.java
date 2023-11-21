@@ -5,6 +5,8 @@ import static io.restassured.RestAssured.baseURI;
 
 import java.io.IOException;
 
+import org.testng.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,6 +29,13 @@ public class DieticianAPIStepDef extends BaseUtils {
 	@Then("User receives {int} Status Code")
 	public void user_receives_status_Code(Integer statusCode) {
 		response.then().assertThat().statusCode(statusCode);
+	}
+
+	@Then("User receives {int} Status Code and error {string}")
+	public void user_receives_status_code_and_error(Integer statusCode, String err) {
+		response.then().assertThat().statusCode(statusCode);
+		String actualError = response.jsonPath().getString("error");
+		Assert.assertEquals(actualError, err);
 	}
 
 	@When("User sends HTTPS POST Request with login endpoint and with invalid credentials in request Body")

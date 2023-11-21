@@ -22,7 +22,8 @@ Feature: Patient Feature
   Scenario: Delete a patient with valid PatientId
     Given User creates  Request
     When User sends HTTPS Delete Patient Request and with valid PatientId and authentication token
-    Then User receives 200 Status Code
+    #Then User receives 200 Status Code
+    Then User receives 200 Status Code and comfirmation message for successfull deletion
 
   @DELETEPatientWithInValidID
   Scenario: Delete a patient with Invalid PatientId
