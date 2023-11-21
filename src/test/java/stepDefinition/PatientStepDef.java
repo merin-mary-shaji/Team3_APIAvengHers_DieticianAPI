@@ -1,8 +1,11 @@
 package stepDefinition;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import java.io.IOException;
 
 import Utilities.BaseUtils;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import request.DieticianRequest;
 import request.PatientRequest;
@@ -35,6 +38,13 @@ public class PatientStepDef extends BaseUtils {
 	@When("User sends HTTPS Delete Patient Request and with Invalid PatientId and authentication token")
 	public void user_sends_https_request_and_with_invalid_patient_id_and_authentication_token() {
 		DieticianRequest.DeletePatientWithInValidId();
+	}
+
+	@Then("User receives {int} Status Code and comfirmation message for successfull deletion")
+	public void user_receives_status_code_and_error_message(Integer statusCode) {
+		// response.then().assertThat().statusCode(statusCode);
+		response.then().assertThat().statusCode(statusCode).contentType("text/plain")
+				.body(equalTo("Patient with Id " + dieticianpayload.getPatientId() + " deleted Successfully!"));
 	}
 
 	@When("User sends HTTPS GET Request to logout as a Dietician and authentication token")

@@ -1,0 +1,1 @@
+{"uuid":"79f7ebd3-6cb9-439f-adb3-6edc12f20e52","name":"Scenario: Dietician LogOut","children":["aa13f3ae-7a78-422a-81da-2c559c1c7b1f"],"befores":[{"name":"stepDefinition.Hooks.beforeScenario()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1700538511789,"stop":1700538511789}],"afters":[],"start":1700538511788,"stop":1700538512212}

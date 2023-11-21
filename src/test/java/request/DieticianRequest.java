@@ -222,7 +222,7 @@ public class DieticianRequest extends BaseUtils {
 				byte[] pdfContent = response.asByteArray();
 				FileOutputStream outputStream = new FileOutputStream("Dieticians_PatientReport.pdf");
 				outputStream.write(pdfContent);
-				System.out.println("PDF saved to output.pdf");
+				System.out.println("PDF saved to Dieticians_PatientReport.pdf");
 			} else {
 				System.out.println("Failed to retrieve PDF. Status code: " + response.getStatusCode());
 			}
@@ -288,6 +288,48 @@ public class DieticianRequest extends BaseUtils {
 
 			response = given().header("Authorization", "Bearer " + dieticianpayload.getToken()).when()
 					.get(config.getString("LogoutDietician_URL"));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return response;
+
+	}
+
+	public static Response getAllMorbidityDetails() {
+		try {
+
+			response = given().header("Authorization", "Bearer " + dieticianpayload.getToken()).when()
+					.get(config.getString("GetAllMorbidityDetails_URL"));
+			// = response.jsonPath().getString("[0].morbidityTestName");
+			dieticianpayload.setMorbidityTestName(response.jsonPath().getString("[0].morbidityTestName"));
+			System.out.println(response.jsonPath().getString("[0].morbidityTestName"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return response;
+
+	}
+
+	public static Response getAllMorbidityDetailsInvalidEndpoint() {
+		try {
+
+			response = given().header("Authorization", "Bearer " + dieticianpayload.getToken()).when()
+					.get(config.getString("GetAllMorbidityDetailsInvalidEndpoint_URL"));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return response;
+
+	}
+
+	public static Response getAllMorbidityConditionByTestName() {
+		try {
+
+			response = given().header("Authorization", "Bearer " + dieticianpayload.getToken())
+					.pathParam("morbidityTestName", dieticianpayload.getMorbidityTestName()).log().all().when()
+					.get(config.getString("GetAllMorbidityConditionTestName_URL") + "{morbidityTestName}");
 
 		} catch (Exception e) {
 			e.printStackTrace();

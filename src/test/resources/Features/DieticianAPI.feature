@@ -10,13 +10,13 @@ Feature: DieticianAPI Feature
   Scenario: User login with Invalid credentials
     Given User creates  Request
     When User sends HTTPS POST Request with login endpoint and with invalid credentials in request Body
-    Then User receives 401 Status Code
+    Then User receives 401 Status Code and error "Unauthorized"
 
   @POSTUserLoginWithMissingMandatoryField
   Scenario: User login with missing mandatory field
     Given User creates  Request
     When User sends HTTPS POST Request with login endpoint and with missing mandatory fields in request body
-    Then User receives 401 Status Code
+    Then User receives 401 Status Code and error "Unauthorized"
 
   @POSTCreateNewPatientWithValidBody
   Scenario: User creates new patient with valid body
